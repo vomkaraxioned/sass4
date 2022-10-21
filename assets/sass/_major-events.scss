@@ -1,0 +1,23 @@
+.major-events {
+  padding: 85px 0;
+
+  @include background(radial-gradient(map.get($colors,"blackLight"),map.get($colors,"blackShade")));
+
+
+  &__title {
+    @include font(map.get($colors,"white"),$weight:700,$size:36px,$text:capitalize,$textAlign:center);
+  }
+
+  &__description {
+    @include contentSize(70%);
+    padding: 40px 0;
+    margin: $autoMargin;
+    @include display(block);
+    @include font(map.get($colors,"brown"),$size:16px,$weight:700,$textAlign:center);
+    line-height: 1.7;
+  }
+
+  &__cards {
+    @include flex(true);
+  }
+}

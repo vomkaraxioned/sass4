@@ -13,11 +13,59 @@
     line-height: 1.7;
   }
 
+  &__content{
+    @include flex(true);
+    gap:5%;
+  }
+
   &__navitems {
-    @include contentSize();
+    @include contentSize(20%);
+    @include flex(true,$direction:column);
+  }
+
+  &__navitem {
+    &:nth-child(2) {
+      margin: 10px 0;
+    }
+    a {
+      @include contentSize(92%);
+      padding: 10px 4%;
+      @include border(null,5px);
+      @include clickable(map.get($colors,"pink"),map.get($colors,"white"));
+      @include font($size:16px,$text:capitalize,$weight:500)
+    }
   }
 
   &__videos {
+    @include contentSize(75%);
+    @include flex(true,$wrap:wrap);
+  }
 
+  &__video {
+    margin-bottom: 20px;
+
+    @include flex($basis:31%);
+
+    &:nth-child(2),&:nth-child(5) {
+      margin:0 3%;
+    }
+
+    @include position(relative);
+
+    &::before {
+      @include position(absolute,50px,50%,null,50%);
+      @include font(map.get($colors,"white"),$size:38px);
+      @include icon("\f04b");
+    }
+
+    @include reverseResponsive(map.get($devices,"desktop")){
+      &:hover::before{
+        @include font(map.get($colors,"pink"));
+      }
+    }
+
+    img {
+      @include border(null,5px 5px 0 0);
+    }
   }
 }
