@@ -1,2 +1,9 @@
 @use "sass:map";
-@import "globals/reset","globals/mixin","globals/variables","banner","header","introduction","major-events","video-gallery";
+@import "globals/reset";
+@import"globals/mixin";
+@import "globals/variables";
+@import "banner";
+@import "header";
+@import "introduction";
+@import "major-events";
+@import "video-gallery";

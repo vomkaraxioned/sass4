@@ -10,14 +10,14 @@
   &__description {
     @include contentSize(60%);
     margin: $autoMargin;
-    padding: 30px 0;
+    padding: 50px 0;
     @include font(map.get($colors,"white"),$size:16px,$weight:700,$textAlign:center);
     line-height: 1.7;
   }
 }
 
 .btn-read-more {
-  padding: 10px 2%;
+  padding: 15px 2%;
   @include border(1px solid map.get($colors,"white"),5px);
   margin: $autoMargin;
   @include display(block);
