@@ -1,30 +1,36 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <title>BroadCast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico">
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      
+    <header class="header">
+      <div class="wrapper-large">
+        <h1 class="logo"><a href="#FIXME" title="broadcast" rel="nofollow"><span>broadcast</span> by<span>templated</span></a></h1>
+        <nav class="header__navbar">
+          <span class="menu">menu</span>
+          <ul class="header__navigation">
+            <li class="nav-item"><a href="#FIXME" rel="nofollow">home</a></li>
+            <li class="nav-item"><a href="#FIXME" rel="nofollow">about</a></li>
+            <li class="nav-item"><a href="#FIXME" rel="nofollow">contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
@@ -32,10 +38,128 @@
 
     </main>
     <!--main section end-->
+    <div class="banner">
+      <div class="wrapper">
+        <h2 class="banner__logo">This is broadcast</h2>
+        <p class="banner__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+          in
+          a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+        <a href="#FIXME" title="Read More" class="btn btn-read-more" rel="nofollow">Read More</a>
+      </div>
+    </div>
 
+    <section class="introduction">
+      <div class="wrapper">
+        <h3 class="introduction__title">This is broadcast know about us </h3>
+        <p class="introduction__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          hasroots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+        <ul class="introduction__videos">
+          <li class="video">
+            <figure><img src="#FIXME" alt="Video1"></figure>
+            <span class="video_-description">This is broadcast know about us</span>
+          </li>
+          <li class="video">
+            <figure><img src="#FIXME" alt="Video1"></figure>
+            <span class="video_-description">This is broadcast know about us</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="video-gallery">
+      <div class="wrapper">
+        <h3 class="video-gallery__title">This is broadcast gallery </h3>
+        <span class="video-gallery__description">Contrary to popular belief, Lorem Ipsum is not simply random
+          text</span>
+        <ul class="video-gallery_navitems">
+          <li class="video-gallery__navitem"><a href="#FIXME" rel="nofollow">concerte</a></li>
+          <li class="video-gallery__navitem"><a href="#FIXME" rel="nofollow">parties</a></li>
+          <li class="video-gallery__navitem"><a href="#FIXME" rel="nofollow">dj</a></li>
+        </ul>
+        <ul class="video-gallery__videos">
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+          <li class="video-gallery__video"><img src="#FIXME" alt="Video1"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="major-events">
+      <div class="wrapper">
+        <h3 class="major-events__title">This are broadcast major events</h3>
+        <span class="major-events__description">Contrary to popular belief, Lorem Ipsum is not simply random text</span>
+        <ul class="major-events_cards">
+          <li class="major-events__card">
+            <figure><img src="#FIXME" alt="Video1"></figure>
+            <span class="video_-description">This is broadcast know about us</span>
+          </li>
+          <li class="major-events__card">
+            <figure><img src="#FIXME" alt="Video1"></figure>
+            <span class="video_-description">This is broadcast know about us</span>
+          </li>
+          <li class="major-events__card">
+            <figure><img src="#FIXME" alt="Video1"></figure>
+            <span class="video_-description">This is broadcast know about us</span>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!--footer section start-->
-    <footer>      
-
+    <footer class="footer">
+      <div class="wrapper">
+        <ul class="footer__events">
+          <li class="footer__events__countries">
+            <h4 class="country-name">vestibullum</h4>
+            <ul class="footer__events__names">
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+            </ul>
+          </li>
+          <li class="footer__events__countries">
+            <h4 class="country-name">vestibullum</h4>
+            <ul class="footer__events__names">
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+            </ul>
+          </li>
+          <li class="footer__events__countries">
+            <h4 class="country-name">vestibullum</h4>
+            <ul class="footer__events__names">
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+              <li class="footer__events__name"><a href="#FIXME" title="Event" rel="nofollow">Contrary to popular
+                  belief</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="social-links">
+          <li class="social-links__link"><a href="#FIXME" title="Twitter">twitter</a></li>
+          <li class="social-links__link"><a href="#FIXME" title="Facebook">fb</a></li>
+          <li class="social-links__link"><a href="#FIXME" title="Insta">insta</a></li>
+          <li class="social-links__link"><a href="#FIXME" title="Snapchat">snap</a></li>
+        </ul>
+        <p class="copyright">&copy; untitled.design.<a href="#FIXME" title="Templated"
+            rel="nofollow">templated</a>.images:<a href="#FIXME" title="Coverr" rel="nofollow">coverr</a>.videos:<a
+            href="#FIXME" title="Templated" rel="nofollow">coverr</a>
+        </p>
+      </div>
     </footer>
     <!--footer section end-->
 
@@ -43,4 +167,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
