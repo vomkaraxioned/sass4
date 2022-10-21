@@ -1,0 +1,25 @@
+.banner {
+  .wrapper {
+    @include flex(true,$justify:center,$align:center,$direction:column);
+  }
+  padding: 235px 0;
+  @include background(null,"../images/banner.png",rgba(71, 71, 224, 0.7),true);
+  &__title {
+    @include font(map.get($colors,"white"),$weight:700,$size:45px,$text:capitalize,$textAlign:center);
+  }
+  &__description {
+    @include contentSize(60%);
+    margin: $autoMargin;
+    padding: 30px 0;
+    @include font(map.get($colors,"white"),$size:16px,$weight:700,$textAlign:center);
+    line-height: 1.7;
+  }
+}
+
+.btn-read-more {
+  padding: 10px 2%;
+  @include border(1px solid map.get($colors,"white"),5px);
+  margin: $autoMargin;
+  @include display(block);
+  @include clickable(map.get($colors,"pink"), map.get($colors,"white"));
+}

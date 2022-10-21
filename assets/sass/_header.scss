@@ -1,7 +1,7 @@
 @include wrapper("large",95%);
 @include wrapper(null,85%);
 .header {
-  @include boxModel(100%);
+  @include contentSize(100%);
   padding: 7px 0;
   @include position(fixed,0);
   @include background(rgba(0,0,0,.7));
@@ -11,7 +11,7 @@
   }
 
  &__navigation {
-   @include flex(true,$isHCenter:flex-end);
+   @include flex(true,$justify:flex-end);
  }
 }
 
