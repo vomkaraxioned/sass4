@@ -1,0 +1,57 @@
+@include wrapper("large",95%);
+@include wrapper(null,85%);
+.header {
+  @include boxModel(100%);
+  padding: 7px 0;
+  @include position(fixed,0);
+  @include background(rgba(0,0,0,.7));
+
+  &__navbar {
+    flex: 1;
+  }
+
+ &__navigation {
+   @include flex(true,$isHCenter:flex-end);
+ }
+}
+
+.wrapper-large {
+  @include flex(true);
+}
+
+.nav-item {
+  &:nth-child(2) {
+    margin: 0 5%;
+  }
+  &:nth-child(1) {
+    a { @include font(map.get($colors,"pink"));}
+  }
+  a {
+    @include font(map.get($colors,"white"),$text:capitalize);
+    @include reverseResponsive(map.get($devices,"desktop")){
+      &:hover { @include font(map.get($colors,"pink"));}
+    }
+  }
+}
+
+.logo {
+  a{
+    @include font(map.get($colors,"white"));
+    @include reverseResponsive(map.get($devices,"desktop")){
+      &:hover {
+        @include font(map.get($colors,"pink"));
+      }
+    }
+  }
+  span {
+    @include font($text:capitalize);
+    &:nth-child(1) {
+      @include font($size:21px,$weight:500);
+    }
+    &:nth-child(2) {
+      @include font($text:uppercase,$size:16px);
+    }
+  }
+}
+
+.menu { @include display(none);}
