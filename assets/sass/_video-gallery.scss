@@ -1,0 +1,23 @@
+.video-gallery {
+  padding: 95px 0;
+  @include background(radial-gradient(map.get($colors,"blackLight"),map.get($colors,"footerBlack")));
+
+  &__title {
+    @include font(map.get($colors,"white"),$weight:700,$size:36px,$text:capitalize);
+  }
+
+  &__description {
+    padding: 43px 0 63px 0;
+    @include display(block);
+    @include font(map.get($colors,"brown"),$size:16px,$weight:700);
+    line-height: 1.7;
+  }
+
+  &__navitems {
+    @include contentSize();
+  }
+
+  &__videos {
+
+  }
+}

@@ -7,10 +7,45 @@
   }
 
   &__description {
-    @include contentSize(60%);
+    @include contentSize(70%);
     margin: $autoMargin;
-    padding: 25px 0;
+    padding: 40px 0;
     @include font(map.get($colors,"brown"),$size:16px,$weight:700,$textAlign:center);
     line-height: 1.7;
+  }
+
+  &__videos {
+    @include flex(true);
+    gap: 4%;
+
+  }
+}
+
+.video {
+  &__description {
+    @include contentSize(100%);
+    padding: 25px 0;
+    @include display(block);
+    @include background(map.get($colors,"blackLight"));
+    @include font(map.get($colors,"white"),$textAlign:center);
+  }
+
+  figure {
+    @include position(relative);
+    &::before {
+      @include position(absolute,150px,50%,null,50%);
+      @include font(map.get($colors,"white"),$size:38px);
+      @include icon("\f04b");
+    }
+
+    @include reverseResponsive(map.get($devices,"desktop")){
+      &:hover::before{
+        @include font(map.get($colors,"pink"));
+      }
+    }
+
+    img {
+      @include border(null,5px 5px 0 0);
+    }
   }
 }
